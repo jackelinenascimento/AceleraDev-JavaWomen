@@ -1,20 +1,28 @@
 package challenge;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+
 import java.util.List;
 import java.util.Map;
+
 import org.junit.Test;
 
 public class MainTest {
 
 	@Test
 	public void q1() throws Exception {
-		assertNotEquals(0, new Main().q1());
+		int q1 = new Main().q1();
+		assertEquals(164, q1);
+		System.out.println(q1);
 	}
 
 	@Test
 	public void q2() throws Exception {
-		assertNotEquals(0, new Main().q2());
+		int q2 = new Main().q2();
+		assertEquals(647, q2);
+		System.out.println(q2);
 	}
 
 	@Test
